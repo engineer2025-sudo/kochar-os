@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#081325"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Kochar">
+<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon.svg"><link rel="stylesheet" href="style.css"><title>Kochar OS</title>
+</head><body>
+<div class="app"><header><span id="clock">10:45</span><span class="brand">KOCHAR <i>OS</i></span><span class="status" id="weather">☀ 74° &nbsp; ◔ 93%</span></header>
+<main id="home">
+<section class="hero"><p class="eyebrow">YOUR PERSONAL SPACE</p><h1 id="greeting">Good afternoon, Arnav.</h1><button class="search" id="searchBtn">⌕ <span>Search Kochar OS</span><kbd>⌘ K</kbd></button></section>
+<section class="quick"><button data-open="home" class="active"><b>⌂</b>Home</button><button data-open="youtube"><b>▶</b>YouTube</button><button data-open="smart"><b>⌁</b>Home</button><button data-open="assistant"><b>✦</b>Kochar AI</button><button data-open="music"><b>♫</b>Music</button><button data-open="camera"><b>◉</b>Cameras</button><button data-open="files"><b>▣</b>Files</button><button data-open="settings"><b>⚙</b>Settings</button></section>
+<div class="grid">
+<article class="card cameras"><div class="cardhead"><span><em class="dot"></em> LIVE HOME</span><button data-open="camera">View all ›</button></div><h2>Ring cameras</h2><div class="camgrid"><button class="empty" onclick="launchApp('ring://')">Open your real Ring dashboard ↗</button></div></article>
+<article class="card calendar"><div class="cardhead"><span>▦ &nbsp; AUGUST 1</span><button>+ Add</button></div><h2>Up next</h2><div class="event"><b>Cross Country</b><span>4:00 PM · Training</span></div><div class="event muted"><b>Finish Kochar OS</b><span>7:30 PM · Personal</span></div></article>
+<article class="card now"><div class="cardhead"><span>♫ &nbsp; NOW PLAYING</span><button data-open="music">Open ›</button></div><div class="album">✺</div><div><h2>Focus Flow</h2><p>Kochar Radio · Ambient</p><div class="controls"><button>‹</button><button class="play" id="play">▶</button><button>›</button></div></div></article>
+<article class="card ai"><span class="spark">✦</span><p>Need something?</p><h2>Ask Kochar AI</h2><button data-open="assistant">Start a conversation →</button></article>
+</div></main>
+<nav><button class="selected" data-open="home">⌂<small>Home</small></button><button data-open="assistant">✦<small>AI</small></button><button data-open="smart">⌁<small>Devices</small></button><button data-open="files">▣<small>Files</small></button><button data-open="settings">⚙<small>Settings</small></button></nav>
+</div>
+<div class="modal" id="modal"><div class="sheet"><button class="close" id="close">×</button><div id="panel"></div></div></div>
+<script src="app.js"></script></body></html>
